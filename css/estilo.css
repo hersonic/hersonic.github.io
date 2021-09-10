@@ -63,17 +63,22 @@ p{
 
 /* Fake image */
 .fakeimg {
-  background-image: url("../imagens/qualificacao.jpg");
+  background-image: url("../imagens/img_fundo.jpg");
   background-color: gray;
   width: 100%;
   padding: 20px;
 }
 
 .fakeimg2 {
-    background-image: url("../imagens/herick_banner.jpg");
+    background-image: url("../imagens/herick.jpeg");
     background-color: gray;
     width: 20%;
+    height: 100%;
     padding: 20px;
+    display: block;
+    margin-left: 40%;
+
+
   }
 /* Add a card effect for articles */
 .card {
