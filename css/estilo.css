@@ -70,15 +70,10 @@ p{
 }
 
 .fakeimg2 {
-    background-image: url("../imagens/herick.jpeg");
-    background-color: gray;
-    width: 20%;
-    height: 100%;
-    padding: 20px;
+    width: 50%;
+    height: 50%;
     display: block;
     margin-left: 40%;
-
-
   }
 /* Add a card effect for articles */
 .card {
