@@ -1,0 +1,16 @@
+
+<router-outlet>
+  <nav class="navbar">
+  <button class="hamburger-button" (click)="toggleMenu()" aria-label="Toggle menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+  <ul class="nav-menu" [class.active]="menuAberto">
+    <li><button mat-button routerLink="/" class="btn-navbar-custom" (click)="fecharMenu()">Home</button></li>
+    <li><button mat-button routerLink="sobre" class="btn-navbar-custom" (click)="fecharMenu()">Sobre</button></li>
+    <li><button mat-button routerLink="experiencia" class="btn-navbar-custom" (click)="fecharMenu()">Experiência</button></li>
+    <li><button mat-button routerLink="contato" class="btn-navbar-custom" (click)="fecharMenu()">Contato</button></li>
+  </ul>
+</nav>
+</router-outlet>

@@ -1,0 +1,107 @@
+    .btn-navbar-custom {
+        background-color: #007bff;
+        /* Cor de fundo */
+        color: white;
+        /* Cor do texto */
+        padding: 10px 20px;
+        /* Preenchimento interno */
+        border: none;
+        /* Remove a borda padrão */
+        border-radius: 5px;
+        /* Bordas arredondadas */
+        cursor: pointer;
+        /* Muda o cursor para indicar que é clicável */
+        margin: 5px;
+        /* Adiciona uma margem */
+        font-size: 16px;
+        /* Tamanho da fonte */
+    }
+
+    .btn-navbar-custom:hover {
+        background-color: #0056b3;
+        /* Cor de fundo ao passar o mouse */
+    }
+
+.hamburger-button {
+    background: transparent;
+    /* Fundo transparente */
+    border: none;
+    /* Sem borda */
+    cursor: pointer;
+    /* Cursor de ponteiro */
+    padding: 0;
+    /* Sem preenchimento */
+    display: none;
+    /* Oculto por padrão */
+}
+
+.hamburger-line {
+    display: block;
+    /* Para que cada linha seja um bloco */
+    width: 25px;
+    /* Largura da linha */
+    height: 3px;
+    /* Altura da linha */
+    background-color: #333;
+    /* Cor da linha */
+    margin: 5px 0;
+    /* Espaço entre as linhas */
+    transition: all 0.3s ease-in-out;
+    /* Transição suave ao girar */
+}
+
+.navbar {
+    background-color: #1976d2;
+    /* Cor de fundo do navbar */
+    padding: 10px 20px;
+    /* Preenchimento interno */
+    display: flex;
+    /* Alinhamento de itens */
+    justify-content: space-between;
+    /* Espaço entre botão e menu */
+    align-items: center;
+    /* Alinhamento vertical */
+}
+
+.nav-menu {
+    list-style: none;
+    /* Remove marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Menu horizontal */
+}
+
+.nav-menu li {
+    margin-left: 20px;
+    /* Espaço entre os itens do menu */
+}
+
+@media (max-width: 768px) {
+
+    /* Em telas menores que 768px */
+    .hamburger-button {
+        display: block;
+        /* Exibe o botão de hambúrguer */
+    }
+
+    .nav-menu {
+        display: none;
+        /* Oculta o menu em telas pequenas */
+        flex-direction: column;
+        /* O menu fica vertical */
+        position: absolute;
+        /* Posicionamento absoluto */
+        top: 50px;
+        /* Ajuste de acordo com o navbar */
+        left: 0;
+        width: 100%;
+        background-color: #1976d2;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        /* Classe adicionada via JavaScript para exibir o menu */
+        display: flex;
+    }
+}
