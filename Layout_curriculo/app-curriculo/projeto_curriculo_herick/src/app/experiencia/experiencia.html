@@ -1,0 +1,10 @@
+<div class="experiencia">
+    <h2>Experiência Profissional</h2>
+    <ul class="experiencia-list">
+        <li *ngFor="let experiencia of experiencias">
+        <h3>{{ experiencia.cargo }} - {{ experiencia.empresa }}</h3>
+        <p>{{ experiencia.periodo }}</p>
+        <p>{{ experiencia.descricao }}</p>
+        </li>
+    </ul>
+</div>
